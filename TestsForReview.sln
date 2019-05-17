@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsForReview", "TestsForReview\TestsForReview.csproj", "{68E5D9E1-01A3-404F-BA77-298EC3A29FA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestsForReview", "TestsForReview\TestsForReview.csproj", "{68E5D9E1-01A3-404F-BA77-298EC3A29FA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

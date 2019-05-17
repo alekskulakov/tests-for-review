@@ -7,9 +7,53 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="nunit" Version="3.11.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <Compile Remove="Common\**" />
+    <Compile Remove="Interfaces\**" />
+    <Compile Remove="WebDriverExt\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <EmbeddedResource Remove="WebDriverExt\**" />
+    <None Remove="Common\**" />
+    <None Remove="Interfaces\**" />
+    <None Remove="WebDriverExt\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Interfaces\IAssert.cs" />
+    <Compile Include="Interfaces\IHasLocator.cs" />
+    <Compile Include="Interfaces\ILocator.cs" />
+    <Compile Include="Interfaces\ISingleInstance.cs" />
+    <Compile Include="WebDriverExt\BasePageElement.cs" />
+    <Compile Include="WebDriverExt\CustomElementLocator.cs" />
+    <Compile Include="WebDriverExt\CustomPageFactory.cs" />
+    <Compile Include="WebDriverExt\DriversController.cs" />
+    <Compile Include="WebDriverExt\ElementListProxy.cs" />
+    <Compile Include="WebDriverExt\LocatorFactory.cs" />
+    <Compile Include="WebDriverExt\LocatorWait.cs" />
+    <Compile Include="WebDriverExt\PageObjects.cs" />
+    <Compile Include="WebDriverExt\RootByAttribute.cs" />
+    <Compile Include="WebDriverExt\SearchWait.cs" />
+    <Compile Include="WebDriverExt\WebDriverExtension.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.0" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="74.0.3729.6" />
+    <PackageReference Include="Serilog" Version="2.8.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.3.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
   </ItemGroup>
 
 </Project>
